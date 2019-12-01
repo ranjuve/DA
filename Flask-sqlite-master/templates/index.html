@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Signup Form</title>
+  
+  
+
+    <style type="text/css">
+    	form > input{
+    		margin: 10px;
+    	}
+    </style>
+
+</head>
+
+<body>
+
+ 		<div class="body"></div>
+ 		<center style="height: 70%;">
+		<div class="bo">
+			<div class="grad"></div>
+			<div class="header">
+				<div style="width: auto;">AIGEEKS</div>
+			</div>
+			<br>
+			<div class="login">
+				<form action="/signup/" method="post">
+        				<div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+<label for="name"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" required>
+<label for="name"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" required>
+<label for="name"><b>Gender</b></label><br>
+
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br><br>
+<label for="name"><b>Birthday</b></label>
+    <input type="date" name="bday" placeholder="dd-mm-yyyy">
+    <br><br>
+<label for="name"><b>Country</b></label>
+    <input type="text" placeholder="country" name="country" required>
+<label for="name"><b>City</b></label>
+    <input type="text" placeholder="city" name="city" required>
+<label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+<label for="username"><b>UserName</b></label>
+    <input type="text" placeholder="username" name="username" required>
+<label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+<label for="phone"><b>Phone Number</b></label>
+    <input type="tel" placeholder="Enter Phone Number" name="phone" required><br><br>
+<label for="photo"><b>Upload photo</b></label>
+    <input type="file" name="pic" accept="image/*">
+ <br><br>
+ <label for="handw"><b>Handwriting</b></label><br>
+
+ <input type="radio" name="handw" value="left" checked> Left<br>
+ <input type="radio" name="handw" value="right"> Right<br><br>
+<label for="suff"><b>I am Suffering from:</b></label><br>
+<input type="checkbox" name="psychic" value="psychic"> I have a Psychic problems.<br>
+<input type="checkbox" name="physical" value="physical"> I have a Physical problems.<br>
+<br>
+<label for="suff"><b>If you dont have any of the above,check box below:</b></label><br>
+
+<input type="checkbox" name="suff" value="none" checked> I have no problems.<br>
+<br><br>
+<label for="habits"><b>Habits:</b></label><br>
+<input type="checkbox" name="yoga" value="yoga"> Yoga<br>
+<input type="checkbox" name="meditate" value="meditate"> Mediatation<br>
+<input type="checkbox" name="smoke" value="smoke">Smoking<br>
+<input type="checkbox" name="drink" value="drink"> Drinking<br>
+<input type="checkbox" name="ecs" value="ecs"> Drugs<br>
+<br>
+<label for="suff"><b>If you dont have any of the above,check box below:</b></label><br>
+
+<input type="checkbox" name="habits" value="none" checked><br>
+<br><br>
+
+<br><br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+				
+				</form>
+			</div>
+		</div>
+		</center>
+  
+  
+
+</body>
+
+</html>
