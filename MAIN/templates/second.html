@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 16px;
+  transform: scale(0.8);
+  transition: 0.5s;
+}
+input[type="radio"]:checked ~ .reveal-if-active,
+input[type="checkbox"]:checked ~ .reveal-if-active {
+    opacity: 1;
+    max-height: 180px;
+    padding: 10px 20px;
+    transform: scale(1);
+    overflow: visible;
+  
+}
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  width:auto;
+  height: auto;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+    <div style="position: absolute; left: 50%;">
+        <div style="position: relative; left: -50%; border:  red 1px;">
+          <h1>TELEPATHY</h1>
+        </div>
+      </div>
+      <br><br><br>
+
+
+      <div class="w3-bar w3-black">
+          <a href="index2.html" class="w3-bar-item w3-button">Home</a>
+          <a href="index.html" class="w3-bar-item w3-button">Sign Up</a>
+          <a href="second.html" class="w3-bar-item w3-button">Self Report Area 1</a>
+          <a href="third.html" class="w3-bar-item w3-button">Self Report Area 2</a>
+          <a href="fourth.html" class="w3-bar-item w3-button">Self Report Area 3</a>
+        </div>
+<div class="login">
+<form action="/sec/" method="post" style="border:1px solid #ccc">
+<div class="container">
+    <h1>Self Report Area 1</h1>
+
+<br><br>
+    <label for="handw"><b>1) Handwriting</b></label><br>
+
+    <input type="radio" name="handw" id="left" value="left" checked> Left
+    <input type="radio" name="handw" id="right" value="right"> Right<br><br>
+   
+   <label for="suff"><b>2) I am Suffering from:</b></label><br>
+   <input type="checkbox" id="psychic" name="prob" value="psychic"> I have a Psychic problems.
+   <input type="checkbox" id="physical" name="prob" value="physical"> I have a Physical problems.
+   <input type="checkbox" id="none1" name="prob" value="none1">None<br>
+   <br>
+   <label for="habits"><b>3) Habits:</b></label><br>
+   <input type="checkbox" name="habits" value="yoga"> Yoga
+   <input type="checkbox" name="habits" value="meditate"> Mediatation
+   <input type="checkbox" name="habits" value="smoke"> Smoking
+   <input type="checkbox" name="habits" value="drink"> Drinking
+   <input type="checkbox" name="habits" value="ecs"> Drugs
+   <input type="checkbox" name="habits" value="none2"> None<br>
+   
+   
+   <br>
+<div>
+    <p><b>4) State of mind before starting the test</b></p>
+    <input type="radio" name="stateofmind" value="awake" >Awake<br>
+    <input type="radio" name="stateofmind" value="dream" >Dream<br>
+    <input type="radio" name="stateofmind" value="Meditation" >Meditation<br>
+    <div><input type="radio" name="stateofmind" value="half_aware" >Half_Awareness<br>
+  
+    <div class="reveal-if-active">
+        <input type="checkbox" name="drinking" value="Drinking"> Drinking <br>    
+        <input type="checkbox" name="smoking" value="smoking"> Smoking <br>  
+        <input type="checkbox" name="sleepy" value="Sleepy"> Sleepy<br>  
+        <input type="checkbox" name="sick" value="Sickness"> Sickness <br> 
+        <input type="checkbox" name="drugs" value="Drugs"> Drugs <br> 
+        <input type="checkbox" name="tired" value="Tired"> Tired <br>  
+      </div>
+    </div>
+</div>
+    Others
+    <input type="text"  name="otherillness" >
+
+    <hr>
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn" formaction="third.html">Submit</button>
+    </div>
+  </div>
+</form>
+</div>
+</body>
+</html>
+

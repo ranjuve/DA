@@ -1,0 +1,82 @@
+/* 
+GitHub repo - 'countrylist.js'
+Author - Nitin Nair
+Repo URL - https://github.com/nitin9nair/countrylist.js
+Date Created - 20/Feb/2019 
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1em;
+    font-family: Titillium Web;
+}
+
+.newcontainer {
+    width: 100%;
+    height: 210px;
+    position: relative;
+    display: block;
+}
+
+h1 {
+    margin: 10px;
+}
+
+div {
+    font-size: 14px;
+}
+
+.subtitle {
+    margin: 10px;   
+}
+
+.btn {
+    min-width: 100px;
+    padding: 10px;
+    background: #008a00;
+    color: #fff;
+    border: 1px solid #008a00;
+    border-radius: 3px;
+    font-family: Titillium Web;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: darkgreen;
+}
+
+.selector {
+    min-width: 300px;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: Titillium Web;
+}
+
+.selector:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.displayList {
+    margin: 20px 10px;
+}
+
+.displayList div {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 500px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.displayList div span {
+    font-weight: bold;
+}

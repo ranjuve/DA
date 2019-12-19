@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 15px;
+  margin: 10px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 16px;
+  transform: scale(0.8);
+  transition: 0.5s;
+}
+input[type="radio"]:checked ~ .reveal-if-active {
+  opacity: 1;
+    max-height: 420px;
+    padding: 10px 20px;
+    transform: scale(1);
+    overflow: visible;
+    margin: 25px;
+  
+  
+}
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity:1;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+/* Add padding to container elements */
+.container {
+  padding: 25px;
+  margin: auto;
+  width:auto;
+  height: auto;
+  line-height-step: auto;
+  margin-bottom: 0%;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <div style="position: absolute; left: 50%;">
+        <div style="position: relative; left: -50%; border:  red 1px;">
+          <h1>TELEPATHY</h1>
+        </div>
+      </div>
+      
+      <br><br><br>
+      <div class="w3-bar w3-black">
+          <a href="index2.html" class="w3-bar-item w3-button">Home</a>
+          <a href="index.html" class="w3-bar-item w3-button">Sign Up</a>
+          <a href="second.html" class="w3-bar-item w3-button">Self Report Area 1</a>
+          <a href="third.html" class="w3-bar-item w3-button">Self Report Area 2</a>
+          <a href="fourth.html" class="w3-bar-item w3-button">Self Report Area 3</a>
+        </div>
+
+<form action="four" method="post" style="border:1px solid #ccc">
+  
+<div class="container">
+    <h1>Self Report Area 3</h1>
+ <div>
+    <p><b>1) Have you had any abnormal experience since your childhood?</b></p>
+    
+    <input type="radio" name="prob" value="yes" > Yes
+<div class="reveal-if-active">
+        <input type="checkbox" name="a1" value="abnormal_watching"> abnormal_watching <t></t>    
+        <input type="checkbox" name="a2" value="abnormal_hearing"> abnormal_hearing <b></b>  
+        <input type="checkbox" name="a3" value="abnormal_abilities"> abnormal_abilities<b></b>   
+        <input type="checkbox" name="a4" value="special_dreams"> special_dreams <br> 
+        <input type="checkbox" name="a5" value="other"> other <br> 
+  <input type="text"  name="otherexp" >
+</div>
+  <input type="radio" name="prob" value="no" > No
+  <div class="reveal-if-active"></div>
+  </div>
+       
+  <br>
+<div>
+    <p><b>2) Have you followed?</b></p>
+    <p>a) Meditation / Spirituality / Mistisisms / Psychic / Concentration / School ?</p>
+  <input type="radio" name="prob" value="yes" > Yes
+<div class="reveal-if-active">
+    
+        <input type="checkbox" name="b1" value="yoga"> yoga <b></b>   
+        <input type="checkbox" name="b2" value="vipasana"> vipasana <b></b>   
+        <input type="checkbox" name="b3" value="zen"> zen <b></b>  
+        <input type="checkbox" name="b4" value="reiki"> reiki <b></b>  
+        <input type="checkbox" name="b5" value="osho"> osho <b></b>     
+        <input type="checkbox" name="b6" value="eckankar"> eckankar <br>   
+        <input type="checkbox" name="b7" value="others"> others <b></b>  
+<br>
+<input type="text"  name="othermedi" >
+    <p>b) How long?</p>
+    Years <input type="number"  name="years" ><b></b> <b></b> 
+    Months <input type="number"  name="months" > <b></b> 
+     <p>c) Presently are you doing it ?</p>
+    <input type="radio" name="areyou" value="yes"> Yes
+    <input type="radio" name="areyou" value="no"> No<br>
+  </div>
+    
+  <input type="radio" name="prob" value="no" > No
+  <div class="reveal-if-active"></div>
+</div>    
+<br>
+
+
+<div>
+<p><b>3) Have you any experience in meditation?</b></p>
+    <input type="radio" name="aryou2" value="yes"> Yes   
+<div class="reveal-if-active">
+        <p> How long?</p>
+        <input type="radio" name="howlong" value="above5y"> Above 5 years<b></b> 
+    <input type="radio" name="howlong" value="2yto5y"> 2 to 5 years<b></b> 
+    <input type="radio" name="howlong" value="6mto2y"> 6 months to 2 years<b></b> 
+    <input type="radio" name="howlong" value="less6m"> Less than 6 months<b></b> 
+    <input type="radio" name="howlong" value="notcont"> Not continuous<b></b> 
+    
+    <p>Presently are you doing it ?</p>
+    <input type="radio" name="areyou3" value="yes"> Yes 
+    <input type="radio" name="areyou3" value="no"> No<br><br><br>
+</div>
+
+<input type="radio" name="aryou2" value="no"> No<br>
+<div class="reveal-if-active"></div>
+</div>
+   
+<div>   
+<p><b>4) Are you doing 50% of your religion orders?</b></p>
+<input type="radio" name="arey" value="yes"> Yes       
+<div class="reveal-if-active">
+        Select your religion
+        <select>
+            <option value="Christian">Christian</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Buddhist">Buddhist</option>
+            <option value="Hindu">Hindu</option>
+            <option value="sikh">Sikh</option>
+
+        </select>
+        <br>Other <input type="text" name="otherreligion">
+</div>
+<input type="radio" name="arey" value="no"> No<br>
+<div class="reveal-if-active"></div>
+</div>  
+
+<div class="clearfix">
+<button type="submit" class="signupbtn" formaction="">Submit</button>
+</div>
+
+</div>
+</form>
+
+</body>
+</html>

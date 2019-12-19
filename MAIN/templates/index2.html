@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html lang="en" >
+
+<head>
+		<div style="position: absolute; left: 50%;">
+				<div style="position: relative; left: -50%; border:  red 1px;">
+				  <h1>TELEPATHY</h1>
+				</div>
+			  </div>
+  <meta charset="UTF-8">
+  <title>Signup Form</title>
+  
+    <style type="text/css">
+    	form > input{
+    		margin: 20px;
+			width: 30%;
+			padding: 8px 10px;
+			box-sizing: border-box;
+
+    	}
+    </style>
+
+</head>
+
+<body>
+
+ 		<div class="body"></div>
+ 		<center style="height: 100%;">
+		<div class="bo">
+			<div class="grad"></div>
+			<div class="header">
+				<div style="width: auto;">********************************</div>
+			</div>
+			<br>
+			<div class="login">
+				<form action="/signin/" method="post">
+					<input type="email" placeholder="email" name="email"><br>
+					<input type="password" placeholder="password" name="psw"><br>
+					<input type="submit" value="Login"><br>
+					
+				</form>
+				<br>
+				<a href="{{url_for('signup')}}">Signup</a>
+			</div>
+		</div>
+		</center>
+  
+  
+
+</body>
+
+</html>

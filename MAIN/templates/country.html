@@ -1,0 +1,70 @@
+<!-- 
+GitHub repo - 'countrylist.js'
+Author - Nitin Nair
+Repo URL - https://github.com/nitin9nair/countrylist.js
+Date Created - 20/Feb/2019 
+ -->
+<!DOCType>
+<html>
+
+<head>
+    <title>countrylist.js - Country, State & City Selector</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <h1>countrylist.js - Country, State & City Selector</h1>
+    
+    <div class="subtitle">A opensource JS library to implement Country, State & City dropdown list of the world.
+        <a href="https://github.com/nitin9nair/countrylist.js" target="_blank">Fork on GitHub</a>
+    </div>
+
+    <div class="container">
+
+        <!-- Country Selector    -->
+        <select id="countrySelector" class="selector" onchange="selectCountry()">
+            <option value="default" disabled selected>Select Country</option>
+        </select>
+
+
+        <!-- State Selector    -->
+        <select id="stateSelector" class="selector" onchange="selectState()">
+            <option value="default" disabled selected>Select State</option>
+        </select>
+
+        <!-- City Selector    -->
+        <select id="citySelector" class="selector" onchange="selectCity()">
+            <option value="default" disabled selected>Select City</option>
+        </select>
+        
+        <div class="displayList">*Please select any country from above dropdown to view its states and cities. </div>
+
+        <div class="displayList">
+            <button class="btn" onclick="resetDropdown()">RESET ALL DROPDOWN</button>
+        </div>
+        
+        <div class="subtitle">Displaying selected value from dropdown list:</div>
+        
+        <!--  Display selected values  -->
+        <div class="displayList">
+            <div>Selected Country: <span id="displayCountry"></span></div>
+            <div>Selected State: <span id="displayState"></span></div>
+            <div>Selected City: <span id="displayCity"></span></div>
+        </div>
+
+        <div class="displayList">*List of Countries, States and Cities maybe incorrect for some values, please raise a issue on GitHub 
+            for fixation.
+        </div>
+
+        <div class="displayList">Made with <span style="color:red;">&#10084;</span> in India</div>
+
+    </div>
+
+    <!-- script containing list of all countries with respective state and cities of the world -->
+    <script src="js/countrylist.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
